@@ -1,0 +1,287 @@
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer{
+    width:min(1200px,92%);
+    margin:80px auto 40px;
+
+    padding:50px;
+
+    border-radius:0px !important;
+}
+
+/* ==========================================
+   TOP
+========================================== */
+
+.footer-top{
+
+    display:grid;
+
+    grid-template-columns:
+        2fr
+        1fr
+        1fr;
+
+    gap:50px;
+
+    padding-bottom:35px;
+
+    border-bottom:
+        1px solid rgba(255,255,255,.1);
+
+}
+
+.footer-brand h2{
+
+    font-size:2rem;
+
+    margin-bottom:18px;
+
+    color:#ffffff;
+
+}
+
+.footer-brand p{
+
+    color:#cbd5e1;
+
+    line-height:1.8;
+
+    max-width:420px;
+
+}
+
+/* ==========================================
+   LINKS
+========================================== */
+
+.footer-links h4,
+.footer-social h4{
+
+    font-size:1.1rem;
+
+    margin-bottom:20px;
+
+    color:#fff;
+
+}
+
+.footer-links{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.footer-links a{
+
+    color:#cbd5e1;
+
+    margin-bottom:14px;
+
+    transition:.3s;
+
+    width:fit-content;
+
+}
+
+.footer-links a:hover{
+
+    color:#60a5fa;
+
+    transform:translateX(6px);
+
+}
+
+/* ==========================================
+   SOCIAL ICONS
+========================================== */
+
+.social-icons{
+
+    display:flex;
+
+    gap:16px;
+
+    margin-top:15px;
+
+}
+
+.social-icons a{
+
+    width:50px;
+
+    height:50px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    color:#ffffff;
+
+    font-size:20px;
+
+    transition:.35s;
+
+}
+
+.social-icons a:hover{
+
+    background:#60a5fa;
+
+    color:#fff;
+
+    transform:translateY(-6px);
+
+    box-shadow:
+        0 0 25px rgba(96,165,250,.45);
+
+}
+
+/* ==========================================
+   BOTTOM
+========================================== */
+
+.footer-bottom{
+
+    margin-top:30px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+.footer-bottom p{
+
+    color:#cbd5e1;
+
+}
+
+.made-with{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+.heart{
+
+    color:#ef4444;
+
+    animation:heartbeat 1.4s infinite;
+
+}
+
+/* ==========================================
+   ANIMATION
+========================================== */
+
+@keyframes heartbeat{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    20%{
+
+        transform:scale(1.2);
+
+    }
+
+    40%{
+
+        transform:scale(1);
+
+    }
+
+    60%{
+
+        transform:scale(1.2);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:900px){
+
+.footer{
+
+padding:40px 25px;
+
+}
+
+.footer-top{
+
+grid-template-columns:1fr;
+
+gap:35px;
+
+}
+
+.footer-bottom{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.footer-brand h2{
+
+font-size:1.7rem;
+
+}
+
+.social-icons{
+
+justify-content:center;
+
+}
+
+.social-icons a{
+
+width:45px;
+height:45px;
+
+font-size:18px;
+
+}
+
+}

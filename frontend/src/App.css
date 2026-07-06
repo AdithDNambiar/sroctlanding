@@ -1,0 +1,158 @@
+.app {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: #5ca9ff;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #09111f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.25);
+  /* border-radius:20px; */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  backdrop-filter: blur(18px);
+
+  -webkit-backdrop-filter: blur(18px);
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+}
+
+button {
+  border: none;
+
+  outline: none;
+
+  cursor: pointer;
+
+  transition: 0.35s;
+
+  font-family: inherit;
+}
+
+button:hover {
+  transform: translateY(-3px);
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+a {
+  color: white;
+
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+}
+
+p {
+  color: #d8d8d8;
+
+  line-height: 1.8;
+}
+
+.container {
+  width: min(1200px, 90%);
+
+  margin: auto;
+}
+
+section {
+  padding: 90px 0;
+}
+
+.fade-up {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(92, 169, 255, 0.25);
+  }
+
+  50% {
+    box-shadow: 0 0 30px rgba(92, 169, 255, 0.7);
+  }
+
+  100% {
+    box-shadow: 0 0 10px rgba(92, 169, 255, 0.25);
+  }
+}
+
+@media (max-width: 900px) {
+  section {
+    padding: 70px 20px;
+  }
+
+  .container {
+    width: 94%;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+}

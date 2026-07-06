@@ -1,0 +1,154 @@
+.about-section{
+    width:100%;
+    padding:100px 20px;
+    display:flex;
+    justify-content:center;
+}
+
+.about-card{
+    width:min(1200px,92%);
+    padding:60px;
+    border-radius:0px !important;
+    text-align:center;
+}
+
+.about-title{
+
+    font-size:3rem;
+
+    font-weight:700;
+
+    color:#fff;
+
+    margin-bottom:20px;
+
+}
+
+.about-description{
+
+    max-width:800px;
+
+    margin:0 auto 60px;
+
+    font-size:1.05rem;
+
+    line-height:1.9;
+
+    color:#cbd5e1;
+
+}
+
+.feature-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.feature-card{
+
+    padding:35px 25px;
+
+    border-radius:0px !important;
+
+    transition:.35s;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.25);
+
+}
+
+.feature-icon{
+
+    font-size:42px;
+
+    color:#60a5fa;
+
+    margin-bottom:20px;
+
+}
+
+.feature-card h3{
+
+    font-size:1.4rem;
+
+    color:#fff;
+
+    margin-bottom:15px;
+
+}
+
+.feature-card p{
+
+    color:#cbd5e1;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+.feature-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.about-card{
+
+padding:40px 25px;
+
+}
+
+.about-title{
+
+font-size:2.3rem;
+
+}
+
+.about-description{
+
+margin-bottom:40px;
+
+}
+
+.feature-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.about-title{
+
+font-size:2rem;
+
+}
+
+.feature-card{
+
+padding:30px 20px;
+
+}
+
+}
