@@ -1,0 +1,181 @@
+.login-page {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 20px;
+}
+
+.login-card {
+  width: min(460px, 92%);
+
+  padding: 55px 45px;
+
+  border-radius: 0px !important;
+
+  text-align: center;
+
+  animation: loginAppear 0.8s ease;
+}
+
+.login-title {
+  font-size: 2.6rem;
+
+  color: #ffffff;
+
+  margin-bottom: 10px;
+
+  font-weight: 700;
+}
+
+.login-subtitle {
+  color: #cbd5e1;
+
+  margin-bottom: 40px;
+
+  font-size: 1rem;
+}
+
+.input-wrapper {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 16px 18px;
+
+  background: rgba(255, 255, 255, 0.06);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  transition: 0.35s;
+}
+
+.input-wrapper:hover {
+  border-color: rgba(96, 165, 250, 0.4);
+}
+
+.input-wrapper:focus-within {
+  border-color: #60a5fa;
+
+  box-shadow: 0 0 20px rgba(96, 165, 250, 0.35);
+}
+
+.input-icon {
+  color: #60a5fa;
+
+  font-size: 20px;
+}
+
+.input-wrapper input {
+  flex: 1;
+
+  background: transparent;
+
+  border: none;
+
+  outline: none;
+
+  color: #fff;
+
+  font-size: 1rem;
+}
+
+.input-wrapper input::placeholder {
+  color: #9ca3af;
+}
+
+.login-btn {
+  margin-top: 35px;
+
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 16px;
+
+  background: #2563eb;
+
+  color: #fff;
+
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  transition: 0.35s;
+}
+
+.login-btn:hover {
+  color: #2563eb;
+  background-color: white;
+}
+
+.login-btn svg {
+  transition: 0.3s;
+}
+
+.login-btn:hover svg {
+  transform: translateX(6px);
+}
+
+@keyframes loginAppear {
+  from {
+    opacity: 0;
+
+    transform: translateY(50px) scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .login-card {
+    padding: 40px 25px;
+  }
+
+  .login-title {
+    font-size: 2rem;
+  }
+
+  .login-subtitle {
+    font-size: 0.95rem;
+
+    margin-bottom: 30px;
+  }
+
+  .input-wrapper {
+    padding: 14px 15px;
+  }
+
+  .login-btn {
+    padding: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    width: 100%;
+
+    padding: 35px 20px;
+  }
+
+  .login-title {
+    font-size: 1.8rem;
+  }
+}
