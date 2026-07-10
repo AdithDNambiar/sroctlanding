@@ -132,7 +132,7 @@ const Home = ({ username }) => {
 They build together.
               <br />
               <br />
-              Launching soon. Build. Connect. Grow.
+              Launching soon.
             </motion.p>
 
             <motion.button
