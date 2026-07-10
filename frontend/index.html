@@ -8,8 +8,10 @@
       content="width=device-width, initial-scale=1.0"
     />
 
-    <title>SROCT | The Ecosystem of Tech</title>
+    <!-- Browser tab title -->
+    <title>SROCT</title>
 
+    <!-- Primary SEO -->
     <meta
       name="description"
       content="SROCT is an innovation ecosystem where developers, engineers, students, creators, founders, teams, organizations and institutions connect, collaborate, showcase projects and transform ideas into impact."
@@ -17,7 +19,7 @@
 
     <meta
       name="keywords"
-      content="SROCT, technology ecosystem, innovation ecosystem, project collaboration, developers, engineers, students, creators, founders, startups, organizations"
+      content="SROCT, ecosystem of tech, technology ecosystem, innovation ecosystem, project collaboration, developers, engineers, students, creators, founders, startups, organizations"
     />
 
     <meta name="author" content="SROCT" />
@@ -25,15 +27,29 @@
 
     <link rel="canonical" href="https://sroct.com/" />
 
+    <!-- Favicon -->
     <link
       rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/sroct-logo-blue.png"
+    />
+
+    <link
+      rel="shortcut icon"
       type="image/png"
       href="/sroct-logo-blue.png"
     />
 
+    <link
+      rel="apple-touch-icon"
+      href="/sroct-logo-blue.png"
+    />
+
+    <!-- Open Graph / LinkedIn / WhatsApp -->
     <meta
       property="og:title"
-      content="SROCT"
+      content="SROCT | The Ecosystem of Tech"
     />
 
     <meta
@@ -44,14 +60,28 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://sroct.com/" />
     <meta property="og:site_name" content="SROCT" />
+    <meta property="og:locale" content="en_IN" />
 
     <meta
       property="og:image"
       content="https://sroct.com/sroct-social-preview.png"
-      content="https://sroct.com/sroct-socialview-preview.png"
     />
 
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      property="og:image:secure_url"
+      content="https://sroct.com/sroct-social-preview.png"
+    />
+
+    <meta
+      property="og:image:alt"
+      content="SROCT — The Ecosystem of Tech"
+    />
+
+    <!-- Twitter / X -->
+    <meta
+      name="twitter:card"
+      content="summary_large_image"
+    />
 
     <meta
       name="twitter:title"
@@ -60,7 +90,7 @@
 
     <meta
       name="twitter:description"
-      content="Connect, collaborate, showcase projects and transform ideas into impact."
+      content="Connect, collaborate, showcase projects and transform ideas into impact through the SROCT ecosystem."
     />
 
     <meta
@@ -68,23 +98,34 @@
       content="https://sroct.com/sroct-social-preview.png"
     />
 
+    <meta
+      name="twitter:image:alt"
+      content="SROCT — The Ecosystem of Tech"
+    />
+
+    <!-- Organization structured data -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Organization",
         "@id": "https://sroct.com/#organization",
         "name": "SROCT",
+        "alternateName": "SROCT | The Ecosystem of Tech",
         "url": "https://sroct.com/",
-        "logo": "https://sroct.com/sroct-logo-blue.png",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://sroct.com/sroct-logo-blue.png"
+        },
+        "image": "https://sroct.com/sroct-social-preview.png",
         "description": "SROCT is an innovation ecosystem connecting people, teams, organizations and institutions to collaborate, showcase projects, exchange knowledge and transform ideas into impact.",
-        "email": "mailto:sroct.off@gmail.com",
+        "email": "sroct.off@gmail.com",
         "sameAs": [
-          "https://github.com/AdithDNambiar/sroctlanding",
-          "YOUR_LINKEDIN_COMPANY_PAGE_URL"
+          "https://github.com/AdithDNambiar/sroctlanding"
         ]
       }
     </script>
 
+    <!-- Website structured data -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -92,16 +133,25 @@
         "@id": "https://sroct.com/#website",
         "url": "https://sroct.com/",
         "name": "SROCT",
-        "alternateName": "SROCT",
+        "alternateName": "SROCT | The Ecosystem of Tech",
+        "description": "SROCT is an innovation ecosystem for building, connecting, collaborating and growing through technology.",
         "publisher": {
           "@id": "https://sroct.com/#organization"
-        }
+        },
+        "inLanguage": "en"
       }
     </script>
   </head>
 
   <body>
     <div id="root"></div>
+
+    <noscript>
+      SROCT is an innovation ecosystem where developers, engineers, students,
+      creators, founders, teams, organizations and institutions connect,
+      collaborate, showcase projects and transform ideas into impact.
+    </noscript>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
