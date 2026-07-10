@@ -47,17 +47,20 @@ const Footer = () => {
             </motion.a>
 
             <motion.a
-              href="#"
-              whileHover={{
-                scale: 1.2,
-                rotate: -8,
-              }}
-            >
-              <FaLinkedin />
-            </motion.a>
+  href="https://www.linkedin.com/company/sroct/"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="SROCT LinkedIn"
+  whileHover={{
+    scale: 1.2,
+    rotate: -8,
+  }}
+>
+  <FaLinkedin />
+</motion.a>
 
             <motion.a
-              href="mailto:your@email.com"
+              href="mailto:sroct.off@gmail.com"
               whileHover={{
                 scale: 1.2,
               }}
