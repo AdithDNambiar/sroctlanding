@@ -119,7 +119,7 @@ const Home = ({ username }) => {
               transition={{ delay: 0.5 }}
             >
               <FaClock />
-              The Ecosystem of Tech
+              Launching soon.
             </motion.h2>
 
             <motion.p
