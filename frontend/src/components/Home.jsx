@@ -128,9 +128,8 @@ const Home = ({ username }) => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.7 }}
             >
-              SROCT is an innovation ecosystem where developers, engineers,
-              students, creators, founders, teams and organizations connect,
-              collaborate, showcase projects and transform ideas into impact.
+              SROCT is an all in one collaboration ecosystem where students, professionals, startups, and organizations can discover teammates, build projects, and showcase verified contributions. Instead of switching between platforms like LinkedIn, GitHub, Discord, and Trello, SROCT brings networking, collaboration, communities, and opportunities under one roof. Our vision is to become the platform where people don't just connect,
+They build together.
               <br />
               <br />
               Launching soon. Build. Connect. Grow.
