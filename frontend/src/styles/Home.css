@@ -165,7 +165,7 @@
   width: min(100%, 480px);
   padding: 38px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 24px;
+  border-radius: 0;
 
   background:
     linear-gradient(
@@ -212,7 +212,7 @@
   place-items: center;
 
   border: 1px solid rgba(255, 255, 255, 0.16);
-  border-radius: 50%;
+  border-radius: 0;
 
   background: rgba(255, 255, 255, 0.09);
   color: #ffffff;
@@ -253,7 +253,7 @@
   padding: 0 16px;
 
   border: 1px solid rgba(255, 255, 255, 0.16);
-  border-radius: 14px;
+  border-radius: 0;
 
   background: rgba(255, 255, 255, 0.08);
 
@@ -305,7 +305,7 @@
   padding: 15px 20px;
 
   border: 0;
-  border-radius: 14px;
+  border-radius: 0;
 
   background: linear-gradient(
     135deg,
@@ -430,7 +430,7 @@
   .success-modal {
     width: min(100%, 520px);
     padding: 32px 24px;
-    border-radius: 22px;
+    border-radius: 0;
   }
 }
 
@@ -464,7 +464,7 @@
     max-height: calc(100dvh - 28px);
     overflow-y: auto;
     padding: 30px 22px;
-    border-radius: 20px;
+    border-radius: 0;
   }
 
   .notify-modal h2,
@@ -483,4 +483,24 @@
     width: 40px;
     height: 40px;
   }
+}
+
+/* Force sharp modal corners */
+.modal-overlay .notify-modal,
+.modal-overlay .notify-modal.glass,
+.modal-overlay .success-modal,
+.modal-overlay .success-modal.glass {
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  clip-path: none !important;
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
+}
+
+/* Remove rounding from any modal pseudo-elements */
+.modal-overlay .notify-modal::before,
+.modal-overlay .notify-modal::after,
+.modal-overlay .success-modal::before,
+.modal-overlay .success-modal::after {
+  border-radius: 0 !important;
 }
