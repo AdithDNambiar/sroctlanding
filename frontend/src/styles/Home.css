@@ -284,9 +284,9 @@ justify-content:center;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background: rgba(3, 10, 27, 0.7);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: rgba(4, 10, 24, 0.82);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
 }
 
 .notify-modal,
